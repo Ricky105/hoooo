@@ -12,3 +12,6 @@
 
 2.21
 requirements.txt并python=3.10
+
+4.10
+requirements的urllib3==1.26.2；增加driver版本123，需要在spiders指定版本；新增update_news超链接合并；新增到10条wechat源；想到一种自动拓源wechat，爬的时候看到底下的tag可以拉进json中

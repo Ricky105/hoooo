@@ -1,3 +1,4 @@
+
 import logging
 import re
 import traceback
@@ -11,6 +12,7 @@ from utils import start_chrome_session
 
 logging.basicConfig(level=logging.INFO)
 MAX_RETRIALS = 10
+CHROME_VERSION = '123'
 
 
 def get_news_from_wechat(url):
@@ -19,14 +21,14 @@ def get_news_from_wechat(url):
     :param url:合集的url
     :return: [title, new_url, publish_date]
     """
-    driver = start_chrome_session()
+    driver = start_chrome_session(CHROME_VERSION)
     driver.get(url)
     album_title = driver.find_element_by_css_selector('.album__author-name').text
     logging.info(f"Scraping {album_title}")
     up_to_date = False
     set_date = date.today()
     # This is for test
-    # set_date = datetime.strptime('2023-10-01', '%Y-%m-%d').date()
+    # set_date = datetime.strptime('2024-04-01', '%Y-%m-%d').date()
     cur_index, trials = 0, 0
     news = []
     while not up_to_date:
@@ -73,14 +75,14 @@ def get_news_from_jiqizhixin():
     从机器之心中爬取消息
     :return: [title, new_url, publish_date]
     """
-    driver = start_chrome_session()
+    driver = start_chrome_session(CHROME_VERSION)
     url = 'https://jiqizhixin.com/'
     driver.get(url)
     up_to_date = False
     logging.info(f"Scraping {url}")
     set_date = date.today()
     # This is for test
-    # set_date = datetime.strptime('2024-01-21', '%Y-%m-%d').date()
+    # set_date = datetime.strptime('2024-04-01', '%Y-%m-%d').date()
     news = []
     cur_index, trials = 0, 0
     while not up_to_date:

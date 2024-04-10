@@ -5,6 +5,38 @@
   },
   {
     "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIwMjAwMjk4Mg==&action=getalbum&album_id=3079598529188298756&scene=126#wechat_redirect",
-    "comment": "大模型"
+    "comment": "大模型日报"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MTYzMzMxMA==&action=getalbum&album_id=3256352785986404355&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247485538&from_itemidx=2&count=3&nolastread=1#wechat_redirect",
+    "comment": "LLM热点Paper"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU0ODEwNTkyMQ==&action=getalbum&album_id=2405193071954231298&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247484486&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment": "Language Model"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTgwNDMzOQ==&action=getalbum&album_id=2123742058476535815&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247498789&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment": "论文分享"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNjE1Nzc1MA==&action=getalbum&album_id=3157851033663012868&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247496714&from_itemidx=2&count=3&nolastread=1#wechat_redirect",
+    "comment": "科研动态"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU2NTYzNzc3NA==&action=getalbum&album_id=2828029313005453313&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247496301&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment": "论文解读"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzODI1NzQyNA==&action=getalbum&album_id=1958994820572545028&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247486941&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment": "python"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4MTkwMTQ4NA==&action=getalbum&album_id=3033949862792347650&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247484453&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment":"面试干货"
+  },
+  {
+    "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NTM2OTQ3Nw==&action=getalbum&album_id=2975422272331153409&scene=173&subscene=&sessionid=undefined&enterid=0&from_msgid=2247484578&from_itemidx=1&count=3&nolastread=1#wechat_redirect",
+    "comment":"大模型"
   }
 ]
