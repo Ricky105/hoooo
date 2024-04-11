@@ -2,7 +2,7 @@
 import logging
 import re
 import traceback
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from time import sleep
 
 import requests
@@ -26,7 +26,7 @@ def get_news_from_wechat(url):
     album_title = driver.find_element_by_css_selector('.album__author-name').text
     logging.info(f"Scraping {album_title}")
     up_to_date = False
-    set_date = date.today()
+    set_date = date.today() - timedelta(days=1)
     # This is for test
     # set_date = datetime.strptime('2024-04-01', '%Y-%m-%d').date()
     cur_index, trials = 0, 0
@@ -80,7 +80,7 @@ def get_news_from_jiqizhixin():
     driver.get(url)
     up_to_date = False
     logging.info(f"Scraping {url}")
-    set_date = date.today()
+    set_date = date.today() - timedelta(days=1)
     # This is for test
     # set_date = datetime.strptime('2024-04-01', '%Y-%m-%d').date()
     news = []

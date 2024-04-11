@@ -36,7 +36,7 @@ def update_news():
     ws = wb.active
 
     # 将DataFrame的数据转换为行，并添加到工作表中
-    for r_idx, row in enumerate(dataframe_to_rows(res_df, index=False, header=True), 1):
+    for r_idx, row in enumerate(dataframe_to_rows(res_df, index=False, header=False), 1):
         for c_idx, value in enumerate(row, 1):
             # 如果是URL列，将相应的标题转换为超链接
             if c_idx == 2:  # 假设URL在第二列
@@ -46,6 +46,8 @@ def update_news():
                 ws.cell(row=r_idx, column=c_idx-1).hyperlink = value
                 # 为了可视化，通常将超链接的文本设置为蓝色和下划线
                 ws.cell(row=r_idx, column=c_idx-1).style = "Hyperlink"
+            elif c_idx == 3:  # 第三列挪到第二列
+                ws.cell(row=r_idx, column=c_idx-1, value=value)
             else:
                 ws.cell(row=r_idx, column=c_idx, value=value)
 
